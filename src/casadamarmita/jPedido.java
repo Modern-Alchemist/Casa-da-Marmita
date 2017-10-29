@@ -38,7 +38,6 @@ public class jPedido extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem2 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -77,14 +76,6 @@ public class jPedido extends javax.swing.JFrame {
 
         jMenu1.setText("Inicio");
         jMenu1.add(jSeparator1);
-
-        jMenuItem2.setText("Pedidos");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
         jMenuBar1.add(jMenu2);
@@ -160,13 +151,6 @@ public class jPedido extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jtPrecoUnitarioActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-        jPedido ped = new jPedido();
-        ped.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -210,7 +194,6 @@ public class jPedido extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JTextField jtPrecoTotal;
     private javax.swing.JTextField jtPrecoUnitario;
