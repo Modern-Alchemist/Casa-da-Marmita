@@ -13,7 +13,8 @@ public class Pedido {
     
     int idMarmitex;
     private String nome;
-    private float preco;
+    private float precoUnitario;
+    private float precoTotal;
 
      public void setIdMarmitex(int novo) {
         idMarmitex = novo;
@@ -23,8 +24,12 @@ public class Pedido {
          nome = novo;
      }
      
-     public void setPreco(float novo){
-         preco = novo;
+     public void setPrecoUnitario(float novo){
+         precoUnitario = novo;
+     }
+     
+     public void setPrecoTotal(float novo){
+         precoTotal = novo;
      }
 
     public int getIdMarmitex() {
@@ -35,7 +40,11 @@ public class Pedido {
         return nome;
     }   
     
-    public float getPreco() {
-        return preco;
+    public float getPrecoUnitario() {
+        return precoUnitario;
     }   
+    
+    public float getPrecoTotal() {
+        return precoTotal;
+    } 
 }
