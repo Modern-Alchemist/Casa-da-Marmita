@@ -19,5 +19,52 @@ public class Cadastro {
     private String cidade;
     private String uf;
     
+    public void setNumero(int novo) {
+        numero = novo;
+    }
+    public void setNome(String novo) {
+        nome = novo;
+    }
+    
+    public void setLogradouro(String novo) {
+        logradouro = novo;
+    }
+    
+    public void setComplemento(String novo) {
+        bairro = novo;
+    }
+
+        
+    public void setCidade(String novo) {
+        cidade = novo;
+    }
+    
+    public void setUf(String novo) {
+        uf = novo;
+    }
+    
+    public float getNumero() {
+        return numero;
+    } 
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public String getLogradouro() {
+        return logradouro;
+    }
+    
+    public String getComplemento() {
+        return complemento;
+    }
+    
+    public String getCidade() {
+        return cidade;
+    }
+    
+    public String getUf() {
+        return uf;
+    }
     
 }
