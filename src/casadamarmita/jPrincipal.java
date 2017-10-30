@@ -110,7 +110,7 @@ public class jPrincipal extends javax.swing.JFrame {
         jMenu1.setText("Inicio");
         jMenu1.add(jSeparator1);
 
-        jMenuItem2.setText("Pedidos");
+        jMenuItem2.setText("Principal");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
@@ -139,8 +139,8 @@ public class jPrincipal extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
-        jPedido ped = new jPedido();
-        ped.setVisible(true);
+        jPrincipal pri = new jPrincipal();
+        pri.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
