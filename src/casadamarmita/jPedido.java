@@ -71,11 +71,6 @@ public class jPedido extends javax.swing.JFrame {
         jMenu1.add(jSeparator1);
 
         jMenuItem1.setText("Principal");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
         jMenu1.add(jMenuItem1);
 
         jMenuBar1.add(jMenu1);
@@ -159,13 +154,6 @@ public class jPedido extends javax.swing.JFrame {
         tam.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1MouseClicked
-
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-        jPrincipal pri = new jPrincipal();
-        pri.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments

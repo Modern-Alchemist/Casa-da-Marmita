@@ -28,6 +28,7 @@ public class jFinalizar extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -43,20 +44,20 @@ public class jFinalizar extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(90, 90, 202, 22);
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel3.setText("Salvando no banco...");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(280, 240, 100, 20);
+
         jLabel2.setBackground(java.awt.Color.orange);
         jLabel2.setForeground(java.awt.Color.red);
         getContentPane().add(jLabel2);
         jLabel2.setBounds(4, 0, 400, 280);
 
-        jMenu1.setText("Inicio");
+        jMenu1.setText("Salvar no banco");
         jMenu1.add(jSeparator1);
 
         jMenuItem1.setText("Principal");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
         jMenu1.add(jMenuItem1);
 
         jMenuBar1.add(jMenu1);
@@ -66,13 +67,6 @@ public class jFinalizar extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-        jPrincipal pri = new jPrincipal();
-        pri.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -112,6 +106,7 @@ public class jFinalizar extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
