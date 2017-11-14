@@ -1,0 +1,172 @@
+Informações de versão
+ Microsoft JDBC Driver 6.0 para SQL Server
+ Maio de 2016
+
+------------
+INTRODUÇÃO
+------------
+Este arquivo contém as últimas novidades e outras informações importantes que complementam a documentação do Microsoft JDBC
+ Driver 6.0 para SQL Server. Você deve ler este arquivo inteiramente antes de instalar
+ o driver JDBC.
+
+Seus comentários são muito importantes para nós e procuraremos responder a eles de maneira
+ oportuna. Para obter informações sobre o envio de comentários por meio do uso de blogs do driver JDBC e de fóruns online,
+ confira a página do Microsoft JDBC Driver 6.0 para SQL Server em
+http://msdn.microsoft.com/data/jdbc.
+
+
+------------
+INSTALAÇÃO
+------------
+As instruções sobre a instalação do driver JDBC estão localizadas no arquivo install.txt.  Veja esse arquivo para
+ obter informações sobre a instalação do driver JDBC nos sistemas operacionais Windows e Unix.
+
+
+---------------------------
+SISTEMAS OPERACIONAIS COM SUPORTE
+---------------------------
+Os sistemas operacionais com suporte para o Microsoft JDBC Driver 6.0 para SQL Server incluem:
+  Windows Server 2008 SP2
+  Windows Server 2008 R2 SP1
+  Windows Server 2012
+  Windows Server 2012 R2
+  Windows Vista SP2
+  Windows 7 SP1
+  Windows 8
+  Windows 8.1
+  Windows 10
+  Linux
+  Unix
+
+A lista acima é um exemplo de alguns sistemas operacionais com suporte. O driver JDBC foi desenvolvido
+ para funcionar em qualquer sistema operacional que dê suporte ao uso de uma JVM (Máquina Virtual Java). Porém, somente
+ os sistemas operacionais Oracle Solaris (x86), SUSE Linux e Windows Vista Service Pack 2 ou posterior foram
+ testados.
+
+
+----------------
+CONTEÚDO DA VERSÃO
+----------------
+O zip executável do Microsoft JDBC Driver 6.0 para SQL Server ou o arquivo tar desempacota os arquivos abaixo
+ nos locais especificados,
+relacionados ao diretório de instalação selecionado:
+
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\install.txt
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\release.txt
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\license.txt
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\sqljdbc.jar
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\sqljdbc4.jar
+<diretório de instalação> \sqljdbc_ <versão> \ <idioma> \sqljdbc41.jar
+<diretório de instalação> \sqljdbc_ <versão> \ <idioma> \sqljdbc42.jar
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\auth\x86\sqljdbc_auth.dll
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\auth\x64\sqljdbc_auth.dll
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\ajuda\exemplos\<arquivos de exemplos...>
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\xa\xa_install.sql
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\xa\x86\sqljdbc_xa.dll
+<diretório de instalação>\sqljdbc_<versão>\<idioma>\xa\x64\sqljdbc_xa.dll
+
+Para obter informações detalhadas sobre cada componente, veja a documentação online,
+ Documentação do Microsoft JDBC Driver para SQL Server: 
+https://msdn.microsoft.com/pt-br/library/dn197850(v=sql.10).aspx
+
+Documentação:
+-------------
+Essas informações de versão, as instruções de instalação e os termos de licença estão incluídos neste pacote. 
+Todas as outras documentações podem ser encontradas online.
+
+Observe que os arquivos de ajuda offline foram descontinuados. 
+
+
+Arquivos JAR:
+---------
+Para dar suporte à compatibilidade com versões anteriores e possíveis cenários de atualização, o JDBC Driver 6.0 inclui
+ quatro bibliotecas de classe JAR em cada pacote de instalação: sqljdbc.jar, sqljdbc4.jar, sqljdbc41.jar
+ e sqljdbc42.jar.  
+
+Observação importante: o sqljdbc.jar e o sqljdbc4.jar são fornecidos apenas para fins de compatibilidade e não
+ contêm novos recursos incluídos nesta versão.  Somente o sqljdbc41.jar e o sqljdbc42.jar
+ contêm os novos recursos.
+
+
+Arquivos específicos de recurso:
+---------
+O Azure Active Directory e os componentes de Autenticação Integrada (no Windows) estão incluídos no diretório de autenticação.
+
+Os componentes de transação distribuída do JDBC estão incluídos no diretório xa.
+
+
+Exemplos:
+-------
+Os aplicativos de exemplo que demonstram vários recursos do driver JDBC estão incluídos no diretório de exemplos
+. Para obter mais detalhes sobre cada exemplo e como executá-los, veja a documentação online
+.
+
+
+-----------
+LISTA DE ALTERAÇÕES
+-----------
+Alterações da versão 4.2 para a 6.0:
+
+Novo recurso: Sempre Criptografado - os desenvolvedores de aplicativos agora podem utilizar o recurso AE (Sempre Criptografado)
+ disponível no SQL Server 2016 CTP (ou superior). O driver JDBC habilita o recurso Sempre Criptografado ao criptografar
+ e descriptografar dados confidenciais armazenados, de maneira transparente, em colunas criptografadas de banco de dados no SQL Server. Para obter mais informações
+, confira a documentação do MSDN sobre o uso do Sempre Criptografado com o driver JDBC. 
+
+Novo recurso: Nome de Domínio Internacionalizado - o driver JDBC agora dá suporte aos IDNs (Nomes de Domínio Internacionalizados) para
+ nomes de servidor e instância. Para obter mais informações, confira a documentação do MSDN sobre o uso de IDN com o driver JDBC.
+
+Novo recurso: Parâmetros com Valor de Tabela - Os parâmetros com valor de tabela fornecem uma maneira fácil de realizar marshaling em várias linhas de dados de
+ um aplicativo cliente do SQL Server sem exigir várias viagens de ida e volta ou uma lógica especial do lado do servidor para processar os dados. 
+Você pode usar parâmetros com valor de tabela para encapsular linhas de dados em um aplicativo cliente e enviar os dados para o servidor em um
+ único comando parametrizado. Para obter mais informações, confira a documentação do MSDN sobre os parâmetros com valor de tabela.
+
+Novo recurso: Azure Active Directory (AAD) - A autenticação do AAD é um mecanismo para se conectar ao Banco de Dados SQL do Azure v12 usando
+ identidades no AAD. Use a autenticação do AAD para gerenciar centralmente as identidades de usuários do banco de dados e como uma alternativa à autenticação do SQL
+ Server. O JDBC Driver 6.0 permite que você especifique suas credenciais do AAD na cadeia de conexão JDBC
+ para se conectar ao banco de dados SQL do Azure. Para obter mais informações, confira a documentação do MSDN sobre como definir as propriedades de conexão para o driver JDBC.
+
+Aperfeiçoamento: Grupos de Disponibilidade AlwaysOn (AG) - O driver agora dá suporte às conexões transparentes para os Grupos de Disponibilidade AlwaysOn
+. O driver rapidamente descobre a topologia do AlwaysOn atual de sua infraestrutura de servidor e se conecta ao
+ servidor ativo atual de forma transparente. Para obter mais informações, confira a documentação do MSDN sobre como definir as propriedades de conexão para
+ o driver JDBC.
+
+Aperfeiçoamento: o driver JDBC agora oferece suporte para recuperar metadados de parâmetro com instruções preparadas para consultas complexas
+, como subconsultas/junções. Observe que essa melhoria estará disponível somente ao usar o SQL Server 2012 e versões mais recentes.
+
+
+------------
+PROBLEMAS CONHECIDOS
+------------
+O Microsoft JDBC Driver 6.0 para SQL Server apresenta os seguintes problemas conhecidos:
+
+1) LIMITAÇÕES DE METADADOS DO PARÂMETRO AO USAR O SQL SERVER 2008 OU 2008 R2
+
+1.a) O PreparedStatement.getParameterMetadata() envia uma SQLException quando usado
+ com uma consulta parametrizada MERGE
+1.b) Os metadados de parâmetro para instruções preparadas não funcionam com consultas que têm subconsultas/junções.
+
+
+2) JavaKerberos e IBM VMs
+
+Se estiver executando em ambientes Windows, você talvez tenha que especificar o principalname no arquivo de configuração 
+ para fazer com que o Java Kerberos funcione. Por exemplo: 
+SQLJDBCDriver {
+  com.ibm.security.auth.module.Krb5LoginModule necessário
+  seDefaultCcache=true
+  credsType=initiator
+  principal=principalname@principaldomain;
+};
+
+
+3) REMOÇÃO DE CONEXÕES COM SQL AZURE
+
+Ao se conectar ao SQL Azure, as conexões ociosas podem ser finalizadas por um componente de rede (como um
+ firewall) depois 
+de um período de inatividade. Para evitar a remoção de conexões ociosas por um componente de rede,
+ as configurações do registro a seguir (ou seus equivalentes em ambientes não Windows) devem ser definidas no sistema operacional
+ no qual o driver foi carregado:
+           
+Configuração do Registro                                                                     Valor recomendado
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\KeepAliveTime            30000
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\KeepAliveInterval         1000
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\TcpMaxDataRetransmission  10
