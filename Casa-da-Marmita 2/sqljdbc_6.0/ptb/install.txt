@@ -1,0 +1,38 @@
+Instruções de instalação
+ Microsoft JDBC Driver 6.0 para SQL Server
+
+
+INTRODUÇÃO
+------------
+Estas são as instruções para desempacotamento do sqljdbc_<versão>_enu.exe e sqljdbc_<versão>_enu.tar.gz.
+
+
+WINDOWS
+-------
+1. Leia o arquivo license.txt. O download e o uso do Microsoft JDBC Driver 6.0 para SQL Server correspondem à aceitação dessa licença.
+
+2. Baixe o sqljdbc_<versão>_enu.exe para um diretório temporário.
+
+3. Execute o sqljdbc_<versão>_enu.exe
+
+4. Insira um diretório de instalação quando solicitado. É recomendável que você desempacote
+ o arquivo zip em %ProgramFiles% com o diretório padrão:
+
+	Microsoft JDBC DRIVER 6.0 para SQL Server
+
+
+UNIX
+----
+1. Leia o arquivo license.txt. O download e o uso do Microsoft JDBC Driver 6.0 para SQL Server correspondem à aceitação dessa licença.
+
+2. Baixe o sqljdbc_<versão>_enu.exe.tar.gz para um diretório temporário.
+
+3. Para desempacotar o arquivo tar compactado, navegue até o diretório no qual você deseja que o
+ driver seja desempacotado e digite:
+
+	gzip -d sqljdbc_<versão>_enu.tar.gz
+
+4. Para desempacotar o arquivo tar, mova-o para o diretório no qual você deseja que o driver
+ seja instalado e digite:
+
+	tar -xf sqljdbc_<versão>_enu.tar
