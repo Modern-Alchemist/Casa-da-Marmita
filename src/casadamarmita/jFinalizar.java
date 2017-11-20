@@ -14,8 +14,9 @@ public class jFinalizar extends javax.swing.JFrame {
     /**
      * Creates new form jFinalizar
      */
-    public jFinalizar() {
+    public int jFinalizar(int a) {
         initComponents();
+        return a;
     }
 
     /**
