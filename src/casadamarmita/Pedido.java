@@ -13,8 +13,12 @@ public class Pedido {
     
     int idMarmitex;
     private String nome;
-    private float precoUnitario;
-    private float precoTotal;
+    private double precoUnitario;
+    private double precoTotal;
+    private float qtde1;    
+    private float qtde3;    
+    private float qtde3;
+
 
      public void setIdMarmitex(int novo) {
         idMarmitex = novo;
@@ -24,13 +28,26 @@ public class Pedido {
          nome = novo;
      }
      
-     public void setPrecoUnitario(float novo){
+     public void setPrecoUnitario(double novo){
          precoUnitario = novo;
      }
      
-     public void setPrecoTotal(float novo){
-         precoTotal = novo;
+     public void setPrecoTotal(double novo1, double novo2){
+         double resultado = novo1 + novo2;
+         precoTotal = resultado;
      }
+     
+     public void setQtde1(float novo) {
+        qtde1 = novo;
+    }
+     
+     public void setQtde2(float novo) {
+        qtde2 = novo;
+    }
+     
+     public void setQtde3(float novo) {
+        qtde3 = novo;
+    }
 
     public int getIdMarmitex() {
         return idMarmitex;
@@ -40,11 +57,25 @@ public class Pedido {
         return nome;
     }   
     
-    public float getPrecoUnitario() {
+    public double getPrecoUnitario() {
         return precoUnitario;
     }   
     
-    public float getPrecoTotal() {
+    public double getPrecoTotal() {
         return precoTotal;
     } 
+    
+    public float getQtde1() {
+        return qtde1;
+    }    
+    
+    public float getQtde2() {
+        return qtde2;
+    }    
+    
+    public float getQtde3() {
+        return qtde3;
+    }
+
+    
 }
