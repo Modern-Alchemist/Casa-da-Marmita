@@ -15,9 +15,7 @@ public class Pedido {
     private String nome;
     private double precoUnitario;
     private double precoTotal;
-    private float qtde1 = 0;
-    private float qtde2 = 0;
-    private float qtde3 = 0;  
+
 
      public void setIdMarmitex(int novo) {
         idMarmitex = novo;
