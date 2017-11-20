@@ -15,6 +15,9 @@ public class Pedido {
     private String nome;
     private double precoUnitario;
     private double precoTotal;
+    private float qtde1;    
+    private float qtde3;    
+    private float qtde3;
 
 
      public void setIdMarmitex(int novo) {
