@@ -14,8 +14,9 @@ public class jPrecos extends javax.swing.JFrame {
     /**
      * Creates new form jPrecos
      */
-    public jPrecos() {
+    public int jPrecos(int a) {
         initComponents();
+        return a;
     }
 
     /**
