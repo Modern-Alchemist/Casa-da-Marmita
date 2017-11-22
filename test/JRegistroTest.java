@@ -3,25 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import casadamarmita.jFinalizar;
+import casadamarmita.jRegistro ;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 /**
  *
- * @author a16041967
+ * @author YURI
  */
-public class JFinalizarTest {
+public class JRegistroTest {
     
-    public JFinalizarTest(){}
+    public JRegistroTest(){}
     
     @Test
     public void deveriaRetornar1aoReceber1(){
         int esperado = 1;
         int retornado;
-        jFinalizar finalizar = new jFinalizar();
-        retornado = finalizar.jFinalizar(esperado);
+        jRegistro registrar = new jRegistro();
+        retornado = registrar.jRegistro(esperado);
         assertEquals(esperado,retornado);
         
-    }
-
+    }    
 }
