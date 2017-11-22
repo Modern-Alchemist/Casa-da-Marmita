@@ -16,8 +16,8 @@ public class Pedido {
     private String nome;
     private double precoUnitario;
     private double precoTotal;
-    private float qtde1;    
-    private float qtde3;    
+    private float qtde1; 
+    private float qtde2; 
     private float qtde3;
 
 
