@@ -5,6 +5,7 @@
  */
 import casadamarmita.jRegistro ;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import org.junit.Test;
 /**
  *
@@ -21,6 +22,16 @@ public class JRegistroTest {
         jRegistro registrar = new jRegistro();
         retornado = registrar.jRegistro(esperado);
         assertEquals(esperado,retornado);
+        
+    }
+
+    @Test
+    public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
+        String[] esperado = null;
+        String retornado;
+        jRegistro registrar= new jRegistro();
+        retornado = registrar.Teste(esperado);
+        assertNull(retornado);
         
     }    
 }

@@ -5,6 +5,7 @@
  */
 import casadamarmita.jPedido;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import org.junit.Test;
 /**
  *
@@ -21,6 +22,16 @@ public class JPedidoTest {
         jPedido pedido = new jPedido();
         retornado = pedido.jPedido(esperado);
         assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
+        String[] esperado = null;
+        String retornado;
+        jPedido pedido= new jPedido();
+        retornado = pedido.Teste(esperado);
+        assertNull(retornado);
         
     }
 }

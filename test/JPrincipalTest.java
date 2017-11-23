@@ -5,6 +5,7 @@
  */
 import casadamarmita.jPrincipal;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import org.junit.Test;
 /**
  *
@@ -21,6 +22,16 @@ public class JPrincipalTest {
         jPrincipal principal = new jPrincipal();
         retornado = principal.jPrincipal(esperado);
         assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
+        String[] esperado = null;
+        String retornado;
+        jPrincipal principal= new jPrincipal();
+        retornado = principal.Teste(esperado);
+        assertNull(retornado);
         
     }
 }

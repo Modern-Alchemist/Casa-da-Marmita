@@ -5,6 +5,7 @@
  */
 import casadamarmita.jFinalizar;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import org.junit.Test;
 /**
  *
@@ -23,5 +24,27 @@ public class JFinalizarTest {
         assertEquals(esperado,retornado);
         
     }
+
+    
+    @Test
+    public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
+        String[] esperado = null;
+        String retornado;
+        jFinalizar finalizar = new jFinalizar();
+        retornado = finalizar.Teste(esperado);
+        assertNull(retornado);
+        
+    }
+    
+    /*
+    @Test
+    public void deveriaRetornarNotNullAoReceberValorQualquer(){
+        String[] esperado = null;
+        String retornado;
+        jFinalizar finalizar = new jFinalizar();
+        retornado = finalizar.main(esperado);
+        assertNull(retornado);
+        
+    }*/
 
 }
