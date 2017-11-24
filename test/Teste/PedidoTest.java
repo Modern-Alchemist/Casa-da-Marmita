@@ -17,52 +17,6 @@ public class PedidoTest {
     
     public PedidoTest(){}
     
-    @Test
-    public void deveriaRetornarIdMarmitexIgualA01AoReceber01(){
-        Integer esperado = 01;
-        Integer retornado;
-        Pedido pedido = new Pedido();
-        pedido.setIdMarmitex(01);
-        retornado = pedido.getIdMarmitex();
-        assertEquals(esperado,retornado);
-        
-    }
-    
-    @Test
-    public void deveriaRetornarQtde1IgualA10AoReceber10(){
-        float esperado = 10;
-        float retornado;
-        float delta = 0;
-        Pedido pedido = new Pedido();
-        pedido.setQtde1(10);
-        retornado = pedido.getQtde1();
-        assertEquals(esperado,retornado,delta);
-        
-    }
-   
-    @Test
-    public void deveriaRetornarQtde2IgualA20AoReceber20(){
-        float esperado = 20;
-        float retornado;
-        float delta = 0;
-        Pedido pedido = new Pedido();
-        pedido.setQtde2(20);
-        retornado = pedido.getQtde2();
-        assertEquals(esperado,retornado,delta);
-        
-    }
-    
-    @Test
-    public void deveriaRetornarQtde3IgualA30AoReceber30(){
-        float esperado = 30;
-        float retornado;
-        float delta = 0;
-        Pedido pedido = new Pedido();
-        pedido.setQtde3(30);
-        retornado = pedido.getQtde3();
-        assertEquals(esperado,retornado,delta);
-        
-    }
     
     @Test
     public void deveriaRetornarSubTotalAoReceberTamanhoEQuant(){
@@ -183,6 +137,72 @@ public class PedidoTest {
     }
     
     @Test
+    public void deveriaRetornarMacarraoAoReceberMacarrao(){
+        boolean esperado = true;
+        boolean retornado;
+        Pedido pedido = new Pedido();
+        pedido.setMacarrao(true);
+        retornado = pedido.isMacarrao();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarBatataFritaAoReceberBatataFrita(){
+        boolean esperado = true;
+        boolean retornado;
+        Pedido pedido = new Pedido();
+        pedido.setBatata_frita(true);
+        retornado = pedido.isBatata_frita();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarLegumesAoReceberLegumes(){
+        boolean esperado = true;
+        boolean retornado;
+        Pedido pedido = new Pedido();
+        pedido.setLegumes(true);
+        retornado = pedido.isLegumes();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarLasanhaAoReceberLasanha(){
+        boolean esperado = true;
+        boolean retornado;
+        Pedido pedido = new Pedido();
+        pedido.setLasanha(true);
+        retornado = pedido.isLasanha();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarOvoFritoAoReceberOvoFrito(){
+        boolean esperado = true;
+        boolean retornado;
+        Pedido pedido = new Pedido();
+        pedido.setOvo_frito(true);
+        retornado = pedido.isOvo_frito();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarTorresmoAoReceberTorresmo(){
+        boolean esperado = true;
+        boolean retornado;
+        Pedido pedido = new Pedido();
+        pedido.setTorresmo(true);
+        retornado = pedido.isTorresmo();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
     public void deveriaRetornarListaPedidoAoReceberListaPedido(){
         String esperado = "Arroz, " ;
         String retornado;
@@ -206,10 +226,76 @@ public class PedidoTest {
     
     @Test
     public void deveriaRetornarListaPedido3AoReceberListaPedido3(){
-        String esperado = "Carne " ;
+        String esperado = "Carne, " ;
         String retornado;
         Pedido pedido = new Pedido();
         pedido.setCarne(true);
+        retornado = pedido.listaPedido();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarListaPedido4AoReceberListaPedido4(){
+        String esperado = "Macarrao, " ;
+        String retornado;
+        Pedido pedido = new Pedido();
+        pedido.setMacarrao(true);
+        retornado = pedido.listaPedido();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarListaPedido5AoReceberListaPedido5(){
+        String esperado = "Batata Frita, " ;
+        String retornado;
+        Pedido pedido = new Pedido();
+        pedido.setBatata_frita(true);
+        retornado = pedido.listaPedido();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarListaPedido6AoReceberListaPedido6(){
+        String esperado = "Legumes, " ;
+        String retornado;
+        Pedido pedido = new Pedido();
+        pedido.setLegumes(true);
+        retornado = pedido.listaPedido();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarListaPedido7AoReceberListaPedido7(){
+        String esperado = "Lasanha, " ;
+        String retornado;
+        Pedido pedido = new Pedido();
+        pedido.setLasanha(true);
+        retornado = pedido.listaPedido();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarListaPedido8AoReceberListaPedido8(){
+        String esperado = "Ovo Frito, " ;
+        String retornado;
+        Pedido pedido = new Pedido();
+        pedido.setOvo_frito(true);
+        retornado = pedido.listaPedido();
+        assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarListaPedido9AoReceberListaPedido9(){
+        String esperado = "Torresmo, " ;
+        String retornado;
+        Pedido pedido = new Pedido();
+        pedido.setTorresmo(true);
         retornado = pedido.listaPedido();
         assertEquals(esperado,retornado);
         

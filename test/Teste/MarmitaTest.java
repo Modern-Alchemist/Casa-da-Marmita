@@ -11,6 +11,7 @@ package Teste;
  */
 import casadamarmita.CasaDaMarmita;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import org.junit.Test;
 
 public class MarmitaTest {
@@ -24,6 +25,16 @@ public class MarmitaTest {
         String retornado = "Nome";
         CasaDaMarmita marmita = new CasaDaMarmita();
         assertEquals(esperado,retornado);
+        
+    }
+    
+    @Test
+    public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
+        String[] esperado = null;
+        String retornado;
+        CasaDaMarmita marmita= new CasaDaMarmita();
+        retornado = marmita.Teste(esperado);
+        assertNull(retornado);
         
     }
 }
