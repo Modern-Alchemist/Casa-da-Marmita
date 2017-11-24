@@ -31,7 +31,7 @@ public class Cadastro {
     }
     
     public void setComplemento(String novo) {
-        bairro = novo;
+        complemento = novo;
     }
 
         
@@ -43,7 +43,15 @@ public class Cadastro {
         uf = novo;
     }
     
-    public float getNumero() {
+    public void setBairro(String novo){
+        bairro = novo;
+    }
+    
+    public String getBairro(){
+        return bairro;
+    }
+    
+    public int getNumero() {
         return numero;
     } 
     

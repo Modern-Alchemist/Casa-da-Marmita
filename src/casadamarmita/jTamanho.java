@@ -14,8 +14,9 @@ public class jTamanho extends javax.swing.JFrame {
     /**
      * Creates new form jTamanho
      */
-    public jTamanho() {
+    public int  jTamanho(int a) {
         initComponents();
+        return a;
     }
 
     /**
