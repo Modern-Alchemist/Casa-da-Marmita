@@ -11,76 +11,10 @@ public class jPedidos extends javax.swing.JFrame {
     /**
      * Creates new form Form1
      */
-
-    public int jPedidos(int a) {
+    public jPedidos() {
         initComponents();
         confirmacao.setVisible(false);
-        return a;     
     }
-    
-    public String Teste(String args[]){
-
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        int a = 5;
-        int b = 5;
-        int c = 5;
-        int d = 5;
-        int e = 0;
-        int resultado = 0;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-       
-   
-    }
-
-
-        //</editor-fold>
-
-        return null;}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -114,6 +48,12 @@ public class jPedidos extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         quantidade = new javax.swing.JTextField();
         confirmaPedido = new javax.swing.JButton();
+        macarrao = new javax.swing.JCheckBox();
+        batata_frita = new javax.swing.JCheckBox();
+        legumes = new javax.swing.JCheckBox();
+        lasanha = new javax.swing.JCheckBox();
+        ovo_frito = new javax.swing.JCheckBox();
+        torresmo = new javax.swing.JCheckBox();
 
         jLabel2.setText("jLabel2");
 
@@ -135,6 +75,11 @@ public class jPedidos extends javax.swing.JFrame {
         });
 
         jButton2.setText("Cancelar");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -183,7 +128,7 @@ public class jPedidos extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pedido)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(confirmacaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(subtotal))
@@ -238,6 +183,18 @@ public class jPedidos extends javax.swing.JFrame {
             }
         });
 
+        macarrao.setText("Macarrão");
+
+        batata_frita.setText("Batata Frita");
+
+        legumes.setText("Legumes");
+
+        lasanha.setText("Lasanha");
+
+        ovo_frito.setText("Ovo Frito");
+
+        torresmo.setText("Torresmo");
+
         javax.swing.GroupLayout painelPedidoLayout = new javax.swing.GroupLayout(painelPedido);
         painelPedido.setLayout(painelPedidoLayout);
         painelPedidoLayout.setHorizontalGroup(
@@ -248,23 +205,32 @@ public class jPedidos extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                        .addComponent(quantidade, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(quantidade, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28))
                     .addGroup(painelPedidoLayout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addGroup(painelPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(pequena)
-                            .addComponent(arroz))
-                        .addGap(84, 84, 84)
+                            .addComponent(arroz)
+                            .addComponent(macarrao)
+                            .addComponent(lasanha))
+                        .addGap(70, 70, 70)
                         .addGroup(painelPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(painelPedidoLayout.createSequentialGroup()
-                                .addComponent(feijao)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(carne))
                             .addGroup(painelPedidoLayout.createSequentialGroup()
                                 .addComponent(media)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(grande)))))
-                .addGap(45, 45, 45))
+                                .addComponent(grande))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelPedidoLayout.createSequentialGroup()
+                                .addGroup(painelPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(feijao)
+                                    .addComponent(batata_frita)
+                                    .addComponent(ovo_frito))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(painelPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(torresmo)
+                                    .addComponent(legumes)
+                                    .addComponent(carne))))))
+                .addGap(17, 17, 17))
             .addGroup(painelPedidoLayout.createSequentialGroup()
                 .addGap(198, 198, 198)
                 .addComponent(confirmaPedido)
@@ -283,7 +249,17 @@ public class jPedidos extends javax.swing.JFrame {
                     .addComponent(arroz)
                     .addComponent(feijao)
                     .addComponent(carne))
-                .addGap(37, 37, 37)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(painelPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(macarrao)
+                    .addComponent(batata_frita)
+                    .addComponent(legumes))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(painelPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lasanha)
+                    .addComponent(ovo_frito)
+                    .addComponent(torresmo))
+                .addGap(20, 20, 20)
                 .addGroup(painelPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(quantidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -291,6 +267,8 @@ public class jPedidos extends javax.swing.JFrame {
                 .addComponent(confirmaPedido)
                 .addContainerGap(46, Short.MAX_VALUE))
         );
+
+        macarrao.getAccessibleContext().setAccessibleName("macarrao");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -337,6 +315,18 @@ public class jPedidos extends javax.swing.JFrame {
         
         if (arroz.isSelected())
             ped.setArroz(true);
+        if (macarrao.isSelected())
+            ped.setMacarrao(true);
+        if (batata_frita.isSelected())
+            ped.setBatata_frita(true);
+        if (legumes.isSelected())
+            ped.setLegumes(true);
+        if (lasanha.isSelected())
+            ped.setLasanha(true);
+        if (ovo_frito.isSelected())
+            ped.setOvo_frito(true);
+        if (torresmo.isSelected())
+            ped.setTorresmo(true);
         if (feijao.isSelected())
             ped.setFeijao(true);
         if (carne.isSelected())
@@ -384,6 +374,10 @@ public class jPedidos extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Obrigado por seu pedido");
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -422,6 +416,7 @@ public class jPedidos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox arroz;
+    private javax.swing.JCheckBox batata_frita;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JCheckBox carne;
     private javax.swing.JButton confirmaPedido;
@@ -436,13 +431,18 @@ public class jPedidos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JCheckBox lasanha;
+    private javax.swing.JCheckBox legumes;
+    private javax.swing.JCheckBox macarrao;
     private javax.swing.JRadioButton media;
+    private javax.swing.JCheckBox ovo_frito;
     private javax.swing.JPanel painelPedido;
     private javax.swing.JLabel pedido;
     private javax.swing.JRadioButton pequena;
     private javax.swing.JTextField quantidade;
     private javax.swing.JLabel subtotal;
     private javax.swing.JLabel taxa;
+    private javax.swing.JCheckBox torresmo;
     private javax.swing.JLabel total;
     // End of variables declaration//GEN-END:variables
 }
