@@ -20,8 +20,57 @@ public class jRegistro extends javax.swing.JFrame {
     /**
      * Creates new form jRegistro
      */
-    public jRegistro() {
+    public int jRegistro(int a) {
         initComponents();
+        return a;
+    }
+    
+    public String Teste(String args[]){
+
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        int a = 5;
+        int b = 5;
+        int c = 5;
+        int d = 5;
+        int e = 0;
+        int resultado = 0;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+
+        //</editor-fold>
+
+        return null;
     }
 
     /**
@@ -67,37 +116,13 @@ public class jRegistro extends javax.swing.JFrame {
 
         jLabel4.setText("LOGRADOURO");
 
-        logradouro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                logradouroActionPerformed(evt);
-            }
-        });
-
         jLabel5.setText("NUMERO");
 
         jLabel6.setText("CIDADE");
 
-        cidade.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cidadeActionPerformed(evt);
-            }
-        });
-
         jLabel7.setText("BAIRRO");
 
-        bairro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bairroActionPerformed(evt);
-            }
-        });
-
         jLabel8.setText("UF");
-
-        uf.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ufActionPerformed(evt);
-            }
-        });
 
         jLabel9.setText("COMPLEMENTO");
 
@@ -197,24 +222,10 @@ public class jRegistro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void logradouroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logradouroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_logradouroActionPerformed
-
-    private void cidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cidadeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cidadeActionPerformed
-
-    private void bairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bairroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bairroActionPerformed
-
-    private void ufActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ufActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ufActionPerformed
-
     private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
-        // TODO add your handling code here:
+        jPrincipal principal = new jPrincipal();
+        principal.setVisible(true);
+        dispose();
     }//GEN-LAST:event_voltarActionPerformed
 
     private void cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarActionPerformed
@@ -222,21 +233,33 @@ public class jRegistro extends javax.swing.JFrame {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             String url="jdbc:sqlserver://localhost:1433;databaseName=Logindb;user=sa;password=banco";
             Connection con = DriverManager.getConnection(url);
-            String sql = "Select * from Login where username=? and password=?";
+            String sql = "Insert into Login (username, password, logradouro, numero, complemento, bairro, cidade, uf) values()";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, username.getText());
             pst.setString(2, password.getText());
+            pst.setString(3, logradouro.getText());
+            pst.setString(4, numero.getText());
+            pst.setString(5, complemento.getText());
+            pst.setString(6, bairro.getText());
+            pst.setString(7, cidade.getText());
+            pst.setString(8, uf.getText());
             ResultSet rs = pst.executeQuery();
             if(rs.next()){
                 JOptionPane.showMessageDialog(null,"Dados corretos");
-                jPedido ped = new jPedido();
-                ped.setVisible(true);
+                jPrincipal prin = new jPrincipal();
+                prin.setVisible(true);
                 dispose();
             }
             else{
                 JOptionPane.showMessageDialog(null,"Dados incorretos");
                 username.setText("");
                 password.setText("");
+                logradouro.setText("");
+                numero.setText("");
+                complemento.setText("");
+                bairro.setText("");
+                cidade.setText("");
+                uf.setText("");
             }
             con.close();
         }
