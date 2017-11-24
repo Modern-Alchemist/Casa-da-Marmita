@@ -3,35 +3,35 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import casadamarmita.jPedido;
+import casadamarmita.jRegistro ;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import org.junit.Test;
 /**
  *
- * @author a16041967
+ * @author YURI
  */
-public class JPedidoTest {
+public class JRegistroTest {
     
-    public JPedidoTest(){}
+    public JRegistroTest(){}
     
     @Test
     public void deveriaRetornar1aoReceber1(){
         int esperado = 1;
         int retornado;
-        jPedido pedido = new jPedido();
-        retornado = pedido.jPedido(esperado);
+        jRegistro registrar = new jRegistro();
+        retornado = registrar.jRegistro(esperado);
         assertEquals(esperado,retornado);
         
     }
-    
+
     @Test
     public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
         String[] esperado = null;
         String retornado;
-        jPedido pedido= new jPedido();
-        retornado = pedido.Teste(esperado);
+        jRegistro registrar= new jRegistro();
+        retornado = registrar.Teste(esperado);
         assertNull(retornado);
         
-    }
+    }    
 }

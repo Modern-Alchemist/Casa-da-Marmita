@@ -3,24 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import casadamarmita.jPedido;
+import casadamarmita.jPedidos;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import org.junit.Test;
 /**
  *
- * @author a16041967
+ * @author YURI
  */
-public class JPedidoTest {
+public class JPedidosTest {
     
-    public JPedidoTest(){}
+    public JPedidosTest(){}
     
     @Test
     public void deveriaRetornar1aoReceber1(){
         int esperado = 1;
         int retornado;
-        jPedido pedido = new jPedido();
-        retornado = pedido.jPedido(esperado);
+        jPedidos pedidos = new jPedidos();
+        retornado = pedidos.jPedidos(esperado);
         assertEquals(esperado,retornado);
         
     }
@@ -29,8 +29,8 @@ public class JPedidoTest {
     public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
         String[] esperado = null;
         String retornado;
-        jPedido pedido= new jPedido();
-        retornado = pedido.Teste(esperado);
+        jPedidos pedidos= new jPedidos();
+        retornado = pedidos.Teste(esperado);
         assertNull(retornado);
         
     }

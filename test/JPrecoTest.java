@@ -5,6 +5,7 @@
  */
 import casadamarmita.jPrecos;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import org.junit.Test;
 /**
  *
@@ -21,6 +22,16 @@ public class JPrecoTest {
         jPrecos precos = new jPrecos();
         retornado = precos.jPrecos(esperado);
         assertEquals(esperado,retornado);
+        
+    }
+
+    @Test
+    public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
+        String[] esperado = null;
+        String retornado;
+        jPrecos precos = new jPrecos();
+        retornado = precos.Teste(esperado);
+        assertNull(retornado);
         
     }
 }

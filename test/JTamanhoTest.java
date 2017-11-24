@@ -5,6 +5,7 @@
  */
 import casadamarmita.jTamanho;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import org.junit.Test;
 /**
  *
@@ -23,4 +24,14 @@ public class JTamanhoTest {
         assertEquals(esperado,retornado);
         
     }
+    
+    @Test
+    public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
+        String[] esperado = null;
+        String retornado;
+        jTamanho tamanho = new jTamanho();
+        retornado = tamanho.Teste(esperado);
+        assertNull(retornado);
+        
+    } 
 }
