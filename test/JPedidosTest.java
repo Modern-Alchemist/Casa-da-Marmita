@@ -15,7 +15,7 @@ public class JPedidosTest {
     
     public JPedidosTest(){}
     
-    @Test
+   /* @Test
     public void deveriaRetornar1aoReceber1(){
         int esperado = 1;
         int retornado;
@@ -23,7 +23,7 @@ public class JPedidosTest {
         retornado = pedidos.jPedidos(esperado);
         assertEquals(esperado,retornado);
         
-    }
+    }*/
     
     @Test
     public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){

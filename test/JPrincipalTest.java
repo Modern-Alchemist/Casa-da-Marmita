@@ -15,7 +15,7 @@ public class JPrincipalTest {
         
     public JPrincipalTest(){}
     
-    @Test
+    /*@Test
     public void deveriaRetornar1aoReceber1(){
         int esperado = 1;
         int retornado;
@@ -23,7 +23,7 @@ public class JPrincipalTest {
         retornado = principal.jPrincipal(esperado);
         assertEquals(esperado,retornado);
         
-    }
+    }*/
     
     @Test
     public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){

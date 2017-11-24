@@ -15,7 +15,7 @@ public class JRegistroTest {
     
     public JRegistroTest(){}
     
-    @Test
+    /*@Test
     public void deveriaRetornar1aoReceber1(){
         int esperado = 1;
         int retornado;
@@ -23,7 +23,7 @@ public class JRegistroTest {
         retornado = registrar.jRegistro(esperado);
         assertEquals(esperado,retornado);
         
-    }
+    }*/
 
     @Test
     public void deveriaRetornarMetodoTesteAoReceberMetodoTeste(){
