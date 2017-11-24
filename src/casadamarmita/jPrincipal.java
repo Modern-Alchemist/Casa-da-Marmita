@@ -20,9 +20,8 @@ public class jPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form jPrincipal
      */
-    public int jPrincipal(int a) {
+    public jPrincipal() {
         initComponents();
-        return a;
     }
     
     public String Teste(String args[]){

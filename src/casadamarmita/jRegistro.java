@@ -20,9 +20,8 @@ public class jRegistro extends javax.swing.JFrame {
     /**
      * Creates new form jRegistro
      */
-    public int jRegistro(int a) {
+    public jRegistro() {
         initComponents();
-        return a;
     }
     
     public String Teste(String args[]){

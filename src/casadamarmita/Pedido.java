@@ -41,7 +41,7 @@ public class Pedido {
             pedido = pedido + "Feijao, ";
         }
         if (carne == true) {
-            pedido = pedido + "Carne " ;
+            pedido = pedido + "Carne, " ;
         }
         if (macarrao == true) {
             pedido = pedido + "Macarrao, ";
