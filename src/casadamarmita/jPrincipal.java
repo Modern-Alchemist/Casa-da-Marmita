@@ -221,7 +221,7 @@ public class jPrincipal extends javax.swing.JFrame {
             ResultSet rs = pst.executeQuery();
             if(rs.next()){
                 JOptionPane.showMessageDialog(null,"Dados corretos");
-                jPedido ped = new jPedido();
+                jPedidos ped = new jPedidos();
                 ped.setVisible(true);
                 dispose();
             }
