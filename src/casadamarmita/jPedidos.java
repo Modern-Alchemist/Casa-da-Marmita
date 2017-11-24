@@ -11,6 +11,7 @@ public class jPedidos extends javax.swing.JFrame {
     /**
      * Creates new form Form1
      */
+
     public int jPedidos(int a) {
         initComponents();
         confirmacao.setVisible(false);
@@ -59,7 +60,6 @@ public class jPedidos extends javax.swing.JFrame {
         resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
         resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
         resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-                resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
         resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
         resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
         resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
@@ -73,16 +73,14 @@ public class jPedidos extends javax.swing.JFrame {
         resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
         resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
         resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
-        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+       
+   
+    }
+
 
         //</editor-fold>
 
-        return null;
-    }
+        return null;}
 
     /**
      * This method is called from within the constructor to initialize the form.
