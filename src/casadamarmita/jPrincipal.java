@@ -23,6 +23,54 @@ public class jPrincipal extends javax.swing.JFrame {
     public jPrincipal() {
         initComponents();
     }
+    
+    public String Teste(String args[]){
+
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        int a = 5;
+        int b = 5;
+        int c = 5;
+        int d = 5;
+        int e = 0;
+        int resultado = 0;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+        resultado = a + b; c = resultado * d; resultado = c + a; e = resultado;
+
+        //</editor-fold>
+
+        return null;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -172,7 +220,7 @@ public class jPrincipal extends javax.swing.JFrame {
             ResultSet rs = pst.executeQuery();
             if(rs.next()){
                 JOptionPane.showMessageDialog(null,"Dados corretos");
-                jPedido ped = new jPedido();
+                jPedidos ped = new jPedidos();
                 ped.setVisible(true);
                 dispose();
             }
